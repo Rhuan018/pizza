@@ -6,71 +6,77 @@
     <title>Pizzaria do Carlão</title>
 
     <style>
-        *{
+        * {
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
-        header{
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            padding: 10px;
-        }
-        footer{
-            background-color: black;
-            padding: 10px;
-            margin: 0;
-        }
-        img{
-            margin: 0;
-        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10;
+            background-color: #fff;
+            color: #333;
         }
-        * {
-            background-color: #000000;
-            overflow: hidden;
-        }
-        a {
-            float: left;
-            display: block;
-            color: white;
+
+        header {
+            background-color: #000;
+            padding: 20px;
             text-align: center;
-            padding: 20px 30px;
-            text-decoration: none;
         }
-        hover {
-            background-color: #ddd;
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1, h3, h4 {
+            color: white;
+        }
+
+        a {
+            display: inline-block;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #ffbb00;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: wheat;
             color: black;
         }
-    </style>
 
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: rgb(255, 255, 255); color: rgb(255, 255, 255);">
 
-   <header> 
-    <div>
-        <a href="#" onclick=>Promoções</a>
-        <a href="#" onclick=>Montar pizza</a>
-        <a href="#" onclick=>Cardapio</a>
-    </div>
-
-    <div id=  style = margin: 20px; font-size: 20px; ></div>
-    
+<header>
     <h1>Pizzaria do Carlão</h1>
+    <nav>
+        <a href="#promocoes">Promoções</a>
+        <a href="#montar-pizza">Montar pizza</a>
+        <a href="#cardapio">Cardápio</a>
+    </nav>
+</header>
 
-   </header>
+<main>
+    <img src="pizza.jpg" alt="Pizzaria">
+</main>
 
-   <header>
-     <main>
-        <img src="pizza.jpg" alt="200px" width="50%">
-     </main>
-     <footer>
-        <h3>Pizzaria do Carlão</h3><br>
-        <h4>Desenvolvido pelo Rhuan</h4>
-     </footer>
-   </header>
+<footer>
+    <h3>Pizzaria do Carlão</h3>
+    <h4>Desenvolvido pelo Rhuan</h4>
+</footer>
+
 </body>
 </html>
