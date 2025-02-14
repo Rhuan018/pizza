@@ -1,0 +1,134 @@
+
+<head>
+    <title>Monte Sua Pizza - Pizzaria do Carlão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url("fundo2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+        }
+
+        
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        
+        .escolha {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .escolha h3 {
+            color: #d32f2f;
+        }
+
+        .escolha label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .escolha select, .escolha input[type="checkbox"] {
+            margin: 5px 0;
+        }
+        
+        .pedir {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        .pedir:hover {
+            background-color: #45a049; 
+        }
+
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria do Carlão</h1>
+        <p>Monte sua pizza do jeito que você gosta!</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="escolha">
+            <h3>Escolha o tamanho da pizza:</h3>
+            <label>
+                <input type="radio" name="tamanho" value="Pequena" data-preco="25"> Pequena (R$ 25,00)
+            </label>
+            <label>
+                <input type="radio" name="tamanho" value="Média" data-preco="35"> Média (R$ 35,00)
+            </label>
+            <label>
+                <input type="radio" name="tamanho" value="Grande" data-preco="45"> Grande (R$ 45,00)
+            </label>
+        </div>
+
+        <div class="escolha">
+            <h3>Escolha os ingredientes (R$ 5,00 cada):</h3>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Queijo Extra"> Queijo Extra
+            </label>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Calabresa"> Calabresa
+            </label>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Bacon"> Bacon
+            </label>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Cebola"> Cebola
+            </label>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Tomate"> Tomate
+            </label>
+            <label>
+                <input type="checkbox" name="ingrediente" value="Pimentão"> Pimentão
+            </label>
+        </div>
+
+        
+        <button class="pedir" onclick="enviarPedido()">Pedir</button>
+    </div>
+
+    <footer>
+        <p>Desenvolvido pelo Rhuan</p>
+    </footer>
+
+ 
+    </script>
+</body>
+</html>

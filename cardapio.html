@@ -1,0 +1,198 @@
+<head> 
+    <title>Cardápio da Pizzaria do Carlão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1; 
+        }
+        .menu h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 0;
+            color: #555;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .menu-item .price {
+            color: #333;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizzaria do Carlão</h1>
+        <p>As pizzas mais saborosas feitas com amor pelo Carlão!</p>
+    </header>
+
+    <div class="menu">
+        <h2>Cardápio do chefão</h2>
+
+        <div class="menu-item">
+            <img src="marguerita.jpg" alt="Pizza Margherita">
+            <div>
+                <h3>Pizza Margherita</h3>
+                <p>Molho de tomate, mussarela, manjericão fresco e tomate.</p>
+                <p class="preço">R$ 35,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="calabresa.jpg" alt="Pizza Calabresa">
+            <div>
+                <h3>Pizza Calabresa</h3>
+                <p>Molho de tomate, mussarela, calabresa fatiada e cebola.</p>
+                <p class="preço">R$ 40,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="4 queijo.avif" alt="Pizza Quatro Queijos">
+            <div>
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Molho de tomate, mussarela, provolone, parmesão e gorgonzola.</p>
+                <p class="preço">R$ 45,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Frango com Catupiry.jpg" alt="Pizza Frango com Catupiry">
+            <div>
+                <h3>Pizza Frango com Catupiry</h3>
+                <p>Molho de tomate, mussarela, frango desfiado e catupiry.</p>
+                <p class="preço">R$ 42,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Portuguesa.jpg" alt="Pizza Portuguesa">
+            <div>
+                <h3>Pizza Portuguesa</h3>
+                <p>Molho de tomate, mussarela, presunto, ovo, cebola, azeitona e ervilha.</p>
+                <p class="preço">R$ 38,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Pepperoni.jpg"Pizza Pepperoni">
+            <div>
+                <h3>Pizza Pepperoni</h3>
+                <p>Molho de tomate, mussarela e pepperoni.</p>
+                <p class="preço">R$ 43,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Napolitana.jpg" alt="Pizza Napolitana">
+            <div>
+                <h3>Pizza Napolitana</h3>
+                <p>Molho de tomate, mussarela, tomate, alho e orégano.</p>
+                <p class="preço">R$ 37,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Bacon.jpg" alt="Pizza Bacon">
+            <div>
+                <h3>Pizza Bacon</h3>
+                <p>Molho de tomate, mussarela, bacon e cebola caramelizada.</p>
+                <p class="preço">R$ 44,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pizza-vegetariana.webp" alt="Pizza Vegetariana">
+            <div>
+                <h3>Pizza Vegetariana</h3>
+                <p>Molho de tomate, mussarela, pimentão, cebola, champignon e azeitona.</p>
+                <p class="preço">R$ 39,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Camarão.webp" alt="Pizza Camarão">
+            <div>
+                <h3>Pizza Camarão</h3>
+                <p>Molho de tomate, mussarela, camarão e catupiry.</p>
+                <p class="preço">R$ 55,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Alho e Óleo.jpg" alt="Pizza Alho e Óleo">
+            <div>
+                <h3>Pizza Alho e Óleo</h3>
+                <p>Molho de tomate, mussarela, alho frito e azeite de oliva.</p>
+                <p class="preço">R$ 36,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pizza Brigadeiro.png" alt="Pizza Brigadeiro">
+            <div>
+                <h3>Pizza Brigadeiro</h3>
+                <p>Chocolate, granulado e leite condensado.</p>
+                <p class="preço">R$ 30,00</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Romeu e Julieta.jpg" alt="Pizza Romeu e Julieta">
+            <div>
+                <h3>Pizza Romeu e Julieta</h3>
+                <p>Goiabada e queijo mussarela.</p>
+                <p class="preço">R$ 32,00</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Pizzaria do Carlão. Sabores que levarão você a loucura.</p>
+    </footer>
+
+</body>
+</html>
