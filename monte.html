@@ -16,20 +16,25 @@
             flex-direction: column;
         }
 
-        
         header {
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px;
+            position: relative; 
         }
 
-        
+        .logo {
+            position: absolute; 
+            top: 10px;
+            left: 10px;
+            height: 50px; 
+        }
+
         .container {
             flex: 1;
             padding: 20px;
         }
 
-        
         .escolha {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
@@ -49,12 +54,16 @@
             font-weight: bold;
         }
 
+        .escolha .ingredientes label {
+            color: white;
+        }
+
         .escolha select, .escolha input[type="checkbox"] {
             margin: 5px 0;
         }
-        
+
         .pedir {
-            background-color: #4CAF50; /* Verde */
+            background-color: #4CAF50;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -65,10 +74,9 @@
         }
 
         .pedir:hover {
-            background-color: #45a049; 
+            background-color: #45a049;
         }
 
-        
         footer {
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
@@ -79,12 +87,13 @@
 </head>
 <body>
     <header>
+        
+        <img src="Logo de Pizzaria Ilustrado Clássico Preto.png" alt="Logo da Pizzaria" class="logo">
         <h1>Pizzaria do Carlão</h1>
         <p>Monte sua pizza do jeito que você gosta!</p>
     </header>
 
     <div class="container">
-        
         <div class="escolha">
             <h3>Escolha o tamanho da pizza:</h3>
             <label>
@@ -98,7 +107,7 @@
             </label>
         </div>
 
-        <div class="escolha">
+        <div class="escolha ingredientes">
             <h3>Escolha os ingredientes (R$ 5,00 cada):</h3>
             <label>
                 <input type="checkbox" name="ingrediente" value="Queijo Extra"> Queijo Extra
@@ -120,7 +129,6 @@
             </label>
         </div>
 
-        
         <button class="pedir" onclick="enviarPedido()">Pedir</button>
     </div>
 
@@ -128,7 +136,7 @@
         <p>Desenvolvido pelo Rhuan</p>
     </footer>
 
- 
+
     </script>
 </body>
 </html>
